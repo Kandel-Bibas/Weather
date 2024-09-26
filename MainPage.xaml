@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Weather.MainPage">
+
+    <ScrollView>
+        <Grid
+            Padding="30,0"
+            x:Name="bgcolor"
+            BackgroundColor="#E56910"
+            MaximumHeightRequest="1500">
+        <HorizontalStackLayout
+            HorizontalOptions="End"
+            VerticalOptions="StartAndExpand"
+            Padding="20"
+            Margin="5">
+
+            <StackLayout>
+                <RadioButton
+                    x:Name="moderd"
+                    Content="Light Mode"
+                    IsChecked="True"/>
+                <RadioButton
+                    Content="Dark Mode"/>
+            </StackLayout>
+
+
+        </HorizontalStackLayout>
+        <Border
+            StrokeShape="RoundRectangle, 20"
+            MaximumWidthRequest="500"
+            MaximumHeightRequest="1050"
+            StrokeThickness="3">
+        <VerticalStackLayout
+            x:Name="Wthrbox"
+            MaximumWidthRequest="1000"
+            MaximumHeightRequest="1100"
+            BackgroundColor="#6CC3E0"
+            Padding="30,0"
+            Margin="0,0,0,0"
+            Spacing="25"
+            HorizontalOptions="Center">
+
+            <HorizontalStackLayout
+                HorizontalOptions="Center"
+                Margin="50">
+
+                <!-- SearchBar and SearchButton -->
+
+                <Entry
+                    x:Name="locationtxt"
+                    WidthRequest="150"
+                    BackgroundColor="White"
+                    Placeholder="US Zipcode"
+                    PlaceholderColor="Black"
+                    TextColor="Black"
+                    FontSize="18"
+                    Margin="0,0,5,0"/>
+
+
+
+                <Button
+                    Text="Search"
+                    MaximumWidthRequest="50"
+                    BackgroundColor="Black"
+                    TextColor="White"
+                    FontSize="20"
+                    Clicked="Search"/>
+
+            </HorizontalStackLayout>
+            <Label
+                x:Name="LocationName"
+                Text=""
+                TextColor="Black"
+                HorizontalTextAlignment="Center"
+                FontSize="45"
+                FontAttributes="Bold"
+                Margin="0,0,0,10"/>
+
+            <!--Weather Image -->
+            <Image
+                x:Name="Wthrimg"
+                WidthRequest="400"
+                HeightRequest="200"
+                Aspect="AspectFit"
+                Margin="0,0,0,0">
+            </Image>
+
+
+            <!-- Loaction Name -->
+            <Label
+                x:Name="weathercondition"
+                Text=""
+                TextColor="Black"
+                HorizontalTextAlignment="Center"
+                VerticalTextAlignment="Center"
+                FontSize="45"
+                FontAttributes="Bold"/>
+
+            <!-- Temperature -->
+            <Border
+                x:Name="tempbdrbox"
+                WidthRequest="200"
+                HeightRequest="200"
+                StrokeShape="RoundRectangle 20"
+                StrokeThickness="4"
+                BackgroundColor="white">
+                <Label
+                    x:Name="Temperature"
+                    Text=""
+                    TextColor="Black"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    FontSize="45"
+                    FontAttributes="Bold"
+                    HeightRequest="200"
+                    WidthRequest="200"/>
+            </Border>
+
+
+
+        </VerticalStackLayout>
+        </Border>
+
+    </Grid>
+        
+    </ScrollView>
+
+</ContentPage>
