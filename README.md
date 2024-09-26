@@ -53,6 +53,6 @@ If you want to contribute to the development of this weather application, feel f
 6. Create a pull request
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE.txt) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 
