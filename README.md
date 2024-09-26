@@ -4,9 +4,9 @@ A simple C# weather application that fetches and displays real-time weather data
 
 ## Features
 
-- **Real-time Weather Data**: Fetches current weather conditions such as temperature, humidity, and wind speed.
-- **API Integration**: Connects to a weather API to retrieve data for any location.
-- **Simple User Interface**: Easy-to-use interface for selecting and viewing weather details.
+- **Real-time Weather Data**: Fetches current weather conditions such as temperature, and weather condition.
+- **API Integration**: Connects to a weather API to retrieve data for any US location using zipcode.
+- **Simple User Interface**: Easy-to-use interface for viewing weather details.
 
 ## Installation
 
